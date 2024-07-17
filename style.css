@@ -1,0 +1,166 @@
+/* style.css */
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 10px;
+}
+
+.form-container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  width: 100%;
+  max-width: 500px; /* Increased max-width for better visibility on larger screens */
+  box-sizing: border-box; /* Ensures padding and border are included in the element’s total width and height */
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #4a90e2;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box; /* Ensures padding and border are included in the element’s total width and height */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus {
+  border-color: #4a90e2;
+  outline: none;
+}
+
+.gender-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.gender-group label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.gender-group input[type="radio"] {
+  margin-right: 10px;
+}
+
+button {
+  background-color: #4a90e2;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  box-sizing: border-box; /* Ensures padding and border are included in the element’s total width and height */
+}
+
+button:hover {
+  background-color: #357abd;
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 16px;
+  text-align: center;
+  color: #4a90e2;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .form-container {
+      padding: 15px;
+  }
+
+  h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+      padding: 10px;
+  }
+
+  button {
+      padding: 10px;
+      font-size: 15px;
+  }
+
+  #result {
+      font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-container {
+      padding: 10px;
+      max-width: 100%; /* Ensures the form takes full width on very small screens */
+  }
+
+  h2 {
+      font-size: 20px;
+      margin-bottom: 5px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+      padding: 8px;
+  }
+
+  button {
+      padding: 8px;
+      font-size: 14px;
+  }
+
+  #result {
+      font-size: 12px;
+  }
+
+  .gender-group {
+      flex-direction: row; /* Align gender options in a row for smaller screens */
+      flex-wrap: wrap; /* Allow wrapping to the next line */
+  }
+
+  .gender-group label {
+      margin-right: 10px;
+      margin-bottom: 0; /* Remove bottom margin for horizontal layout */
+  }
+
+  .gender-group input[type="radio"] {
+      margin-right: 5px;
+  }
+}
+
