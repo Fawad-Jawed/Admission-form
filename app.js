@@ -5,12 +5,7 @@ function generateRollNumber() {
     const gender = document.querySelector('input[name="gender"]:checked')?.value;
 
     if (!name || !email || !phone || !gender ) {
-       Swal.fire({
-  icon: 'error',
-  title: 'Oops...',
-  text: 'Please fill out all fields and select a gender.',
-  confirmButtonText: 'Okay'
-});
+        alert('Please fill out all fields and select a gender.');
 
         return;
     }
